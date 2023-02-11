@@ -73,7 +73,7 @@ namespace Facebook.Unity.Editor
             FacebookSettings.RegisterChangeEventCallback(this.SettingsChanged);
         }
 
-        [MenuItem("Facebook/Edit Settings")]
+        [MenuItem("Packages/Facebook/Edit Settings")]
         public static void Edit()
         {
             var instance = FacebookSettings.NullableInstance;
@@ -96,7 +96,7 @@ namespace Facebook.Unity.Editor
             Selection.activeObject = FacebookSettings.Instance;
         }
 
-        [MenuItem("Facebook/Developers Page")]
+        [MenuItem("Packages/Facebook/Developers Page")]
         public static void OpenAppPage()
         {
             string url = "https://developers.facebook.com/apps/";
@@ -108,21 +108,21 @@ namespace Facebook.Unity.Editor
             Application.OpenURL(url);
         }
 
-        [MenuItem("Facebook/SDK Documentation")]
+        [MenuItem("Packages/Facebook/SDK Documentation")]
         public static void OpenDocumentation()
         {
             string url = "https://developers.facebook.com/docs/unity/";
             Application.OpenURL(url);
         }
 
-        [MenuItem("Facebook/SDK Facebook Group")]
+        [MenuItem("Packages/Facebook/SDK Facebook Group")]
         public static void OpenFacebookGroup()
         {
             string url = "https://www.facebook.com/groups/491736600899443/";
             Application.OpenURL(url);
         }
 
-        [MenuItem("Facebook/Report a SDK Bug")]
+        [MenuItem("Packages/Facebook/Report a SDK Bug")]
         public static void ReportABug()
         {
             string url = "https://developers.facebook.com/bugs";

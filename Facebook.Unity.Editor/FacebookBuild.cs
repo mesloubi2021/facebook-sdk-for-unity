@@ -33,7 +33,7 @@ namespace Facebook.Unity.Editor
         private const string PluginsPath = "Assets/FacebookSDK/Plugins/";
         private const string PlayServicesResolverPath = "Assets/PlayServicesResolver/";
         private const string StreamingAssetsPath = "Assets/StreamingAssets/";
-        private const string ExternalDependencyManagerPath = "Assets/ExternalDependencyManager/";
+        private const string ExternalDependencyManagerPath = "Packages/ExternalDependencyManager/";
         private const string EditorPath = "Assets/Editor/";
 
         public enum Target
