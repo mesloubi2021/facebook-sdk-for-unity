@@ -1,4 +1,4 @@
-Copyright (c) Meta Platforms, Inc. and affiliates.
+rCopyright (c) Meta Platforms, Inc. and affiliates.
 
 Facebook SDK for Unity
 ========================
