@@ -85,6 +85,11 @@ namespace Facebook.Unity.Mobile.IOS
             return this.iosWrapper.FBAdvertiserTrackingEnabled(advertiserTrackingEnabled);
         }
 
+        public override bool SetDomainErrorEnabled(bool domainErrorEnabled)
+        {
+            return this.iosWrapper.FBDomainErrorEnabled(domainErrorEnabled);
+        }
+
         public override void SetPushNotificationsDeviceTokenString(string token)
         {
             this.iosWrapper.SetPushNotificationsDeviceTokenString(token);
@@ -328,9 +333,9 @@ namespace Facebook.Unity.Mobile.IOS
 
         public override void OpenFriendFinderDialog(
             FacebookDelegate<IGamingServicesFriendFinderResult> callback)
-		{
+        {
             this.iosWrapper.OpenFriendFinderDialog(System.Convert.ToInt32(CallbackManager.AddFacebookDelegate(callback)));
-		}
+        }
 
         public override void GetFriendFinderInvitations(FacebookDelegate<IFriendFinderInvitationResult> callback)
         {

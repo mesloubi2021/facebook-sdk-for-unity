@@ -85,11 +85,13 @@ namespace Facebook.Unity.Mobile
 
         public abstract bool IsImplicitPurchaseLoggingEnabled();
 
-        public abstract void SetAutoLogAppEventsEnabled (bool autoLogAppEventsEnabled);
+        public abstract void SetAutoLogAppEventsEnabled(bool autoLogAppEventsEnabled);
 
         public abstract void SetAdvertiserIDCollectionEnabled(bool advertiserIDCollectionEnabled);
 
         public abstract bool SetAdvertiserTrackingEnabled(bool advertiserTrackingEnabled);
+
+        public abstract bool SetDomainErrorEnabled(bool domainErrorEnabled);
 
         public abstract void SetPushNotificationsDeviceTokenString(string token);
 

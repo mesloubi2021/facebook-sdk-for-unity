@@ -102,11 +102,13 @@ namespace Facebook.Unity.Mobile.IOS
 
         void FBAppEventsSetLimitEventUsage(bool limitEventUsage);
 
-        void FBAutoLogAppEventsEnabled (bool autoLogAppEventsEnabled);
+        void FBAutoLogAppEventsEnabled(bool autoLogAppEventsEnabled);
 
         void FBAdvertiserIDCollectionEnabled(bool advertiserIDCollectionEnabledID);
 
         bool FBAdvertiserTrackingEnabled(bool advertiserTrackingEnabled);
+
+        bool FBDomainErrorEnabled(bool domainErrorEnabled);
 
         void GetAppLink(int requestId);
 
