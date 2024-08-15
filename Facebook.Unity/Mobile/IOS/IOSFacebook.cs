@@ -493,7 +493,7 @@ namespace Facebook.Unity.Mobile.IOS
                 foreach (KeyValuePair<string, object> kvp in dict)
                 {
                     res.Keys[res.NumEntries] = kvp.Key;
-                    res.Values[res.NumEntries] = kvp.Value.ToString();
+                    res.Values[res.NumEntries] = (kvp.Value == null ? string.Empty : kvp.Value.ToString());
                     res.NumEntries++;
                 }
             }
