@@ -1,6 +1,6 @@
 ---
 name: Feature Request
-about: Tell us something you want to see in this project
+about: Tell us something you want to see in this project.
 labels: enhancement
 ---
 
