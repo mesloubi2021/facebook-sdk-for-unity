@@ -75,33 +75,15 @@ namespace Facebook.Unity.Editor
                     "ProjectSettings"
                 });
 
-            // com.android.support:support-v4
-            Google.VersionHandler.InvokeInstanceMethod(
-                svcSupport,
-                "DependOn",
-                new object[] {
-                    "com.android.support",
-                    "support-v4",
-                       "25.3.1"
-                },
-                namedArgs: new Dictionary<string, object>() {
-                    {
-                        "packageIds",
-                        new string[] {
-                            "extra-android-m2repository"
-                        }
-                    }
-                });
-
-            AndroidSupportLibraryResolver.addSupportLibraryDependency(svcSupport, "support-v4", "25.3.1");
-            AndroidSupportLibraryResolver.addSupportLibraryDependency(svcSupport, "appcompat-v7", "25.3.1");
-            AndroidSupportLibraryResolver.addSupportLibraryDependency(svcSupport, "cardview-v7", "25.3.1");
-            AndroidSupportLibraryResolver.addSupportLibraryDependency(svcSupport, "customtabs", "25.3.1");
-
+            AndroidSupportLibraryResolver.addSupportLibraryDependency(svcSupport, "androidx.legacy", "legacy-support-v4", "1.0.0");
+            AndroidSupportLibraryResolver.addSupportLibraryDependency(svcSupport, "androidx.appcompat", "appcompat", "1.0.0");
+            AndroidSupportLibraryResolver.addSupportLibraryDependency(svcSupport, "androidx.cardview", "cardview", "1.0.0");
+            AndroidSupportLibraryResolver.addSupportLibraryDependency(svcSupport, "androidx.browser", "browser", "1.0.0");
         }
 
         public static void addSupportLibraryDependency(
             object svcSupport,
+            string packagePrefix,
             String packageName,
             String version)
         {
@@ -109,7 +91,7 @@ namespace Facebook.Unity.Editor
                 svcSupport,
                 "DependOn",
                 new object[] {
-                    "com.android.support",
+                    packagePrefix,
                     packageName,
                        version
                 },
