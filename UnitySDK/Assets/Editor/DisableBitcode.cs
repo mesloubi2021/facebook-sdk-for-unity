@@ -21,7 +21,7 @@
 using System.IO;
 using UnityEngine;
 using UnityEditor;
-#if UNITY_IOS
+#if UNITY_IOS && UNITY_EDITOR
 using UnityEditor.Build.Reporting;
 using UnityEditor.iOS.Xcode;
 #endif
@@ -60,3 +60,4 @@ namespace Facebook.Unity.PostProcess
         }
     }
 }
+#endif
